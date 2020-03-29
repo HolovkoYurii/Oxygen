@@ -4,6 +4,9 @@
     z-index: 10;
     background: rgba(255, 255, 255,.8);
     width: 100%;
+    .container{
+        max-width: 1360px;
+    }
     .header__wrap{
         display: flex;
         justify-content: space-between;
