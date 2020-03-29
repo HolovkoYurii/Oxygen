@@ -4,16 +4,39 @@
 @import "reset";
 @import "block/header";
 @import "block/start-screen";
+@import "block/about-us";
+
 
 body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 .container{
-    max-width: 1360px;
+    max-width: 1190px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+.title-section{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 75px;
+    letter-spacing: -1.65px;
+    color: #242121;
+    position: relative;
+    margin-right: 15px;
+    white-space: nowrap;
+    &::after{
+        content: "";
+        width: 60px;
+        height: 4px;
+        background: #FCBB08;
+        position: absolute;
+        left: 0;
+        top: 89px;
+    }
 }
 
 

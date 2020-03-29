@@ -1,0 +1,23 @@
+.about-us{
+    background-color: #F6F8FA;
+    padding: 152px 0 159px 0;
+    .about-us__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-us__wrap-text{
+    }
+    .about-us__text{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #373A39;
+        max-width: 770px;
+        width: 100%;
+        &:first-child{
+            padding-bottom: 20px
+        }
+    }
+}
