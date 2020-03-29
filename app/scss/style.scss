@@ -5,6 +5,8 @@
 @import "block/header";
 @import "block/start-screen";
 @import "block/about-us";
+@import "block/our-expertise";
+
 
 
 body{
@@ -40,3 +42,31 @@ body{
 }
 
 
+#go-top {
+    position: fixed; 
+    bottom: 193px; 
+    right: 30px; 
+    cursor:pointer; 
+    display:none;
+    width: 50px;
+    height: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 41px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #go-top:hover{
+    border: solid 1px #000;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;	
+  }
