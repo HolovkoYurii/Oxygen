@@ -35,4 +35,60 @@ $(document).ready(function(){
    $(function() {
     $("#go-top").scrollToTop();
    });
+
+
+   let tab = function () {
+    let tabNav = document.querySelectorAll('.tabs__item'),
+        tabContent = document.querySelectorAll('.tab__content'),
+        tabName;
+
+    tabNav.forEach(item => {
+        item.addEventListener('click', selectTabNav)
+    });
+
+    function selectTabNav() {
+        tabNav.forEach(item => {
+            item.classList.remove('tabs__item-active');
+        });
+        this.classList.add('tabs__item-active');
+        tabName = this.getAttribute('data-tab-name');
+        selectTabContent(tabName);
+    }
+
+    function selectTabContent(tabName) {
+        tabContent.forEach(item => {
+            item.classList.contains(tabName) ? item.classList.add('tab-active') : item.classList.remove('tab-active');
+        })
+    }
+
+};
+
+
+
+
+
+tab();
+
+   var $div=$('#about-us'),//Блок, доскроллив до которого анимация должна стартовать.
+       inited=false;
+    
+   $(window).scroll(function(){
+       if(inited) return;
+        
+       var $t=$(this),
+           s_top=$t.scrollTop();
+        
+       if(s_top+$t.height()+2000<$div.offset().top)
+           return;
+        
+      
+        
+       inited=true
+
+   });
+   
+
+
+
+
 });
