@@ -6,12 +6,21 @@
 @import "block/start-screen";
 @import "block/about-us";
 @import "block/our-expertise";
+@import "block/magic";
+@import "block/portfolio";
 
+.active{
+    padding-left: 200px;
+    transition: .9s;
+}
 
 
 body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 .container{
     max-width: 1190px;
@@ -23,7 +32,7 @@ body{
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 60px;
     line-height: 75px;
     letter-spacing: -1.65px;
     color: #242121;
@@ -70,3 +79,6 @@ body{
       -webkit-transition: 0.3s;
       transition: 0.3s;	
   }
+
+
+
