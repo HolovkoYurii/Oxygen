@@ -37,37 +37,35 @@ $(document).ready(function(){
    });
 
 
-   let tab = function () {
-    let tabNav = document.querySelectorAll('.tabs__item'),
-        tabContent = document.querySelectorAll('.tab__content'),
-        tabName;
+//    let tab = function () {
+//     let tabNav = document.querySelectorAll('.tabs__item'),
+//         tabContent = document.querySelectorAll('.tab__content'),
+//         tabName;
 
-    tabNav.forEach(item => {
-        item.addEventListener('click', selectTabNav)
-    });
+//     tabNav.forEach(item => {
+//         item.addEventListener('click', selectTabNav)
+//     });
 
-    function selectTabNav() {
-        tabNav.forEach(item => {
-            item.classList.remove('tabs__item-active');
-        });
-        this.classList.add('tabs__item-active');
-        tabName = this.getAttribute('data-tab-name');
-        selectTabContent(tabName);
-    }
+//     function selectTabNav() {
+//         tabNav.forEach(item => {
+//             item.classList.remove('tabs__item-active');
+//         });
+//         this.classList.add('tabs__item-active');
+//         tabName = this.getAttribute('data-tab-name');
+//         selectTabContent(tabName);
+//     }
 
-    function selectTabContent(tabName) {
-        tabContent.forEach(item => {
-            item.classList.contains(tabName) ? item.classList.add('tab-active') : item.classList.remove('tab-active');
-        })
-    }
+//     function selectTabContent(tabName) {
+//         tabContent.forEach(item => {
+//             item.classList.contains(tabName) ? item.classList.add('tab-active') : item.classList.remove('tab-active');
+//         })
+//     }
 
-};
-
-
+// };
 
 
 
-tab();
+// tab();
 
    var $div=$('#about-us'),//Блок, доскроллив до которого анимация должна стартовать.
        inited=false;
@@ -86,9 +84,37 @@ tab();
        inited=true
 
    });
-   
+
+   $(function(){
+       let filter = $("[data-filter]");
+
+       filter.on("click", function(event){
+           event.preventDefault();
+
+           let cat = $(this).data("filter");
+
+           if(cat == "all"){
+               $("[data-picture]").removeClass("hide");
+           }else{
+               $("[data-picture]").each(function(){
+                   let workCat = $(this).data("picture");
+                   if(workCat != cat){
+                       $(this).addClass("hide");
+                   }else{
+                    $(this).removeClass("hide");
+                   }
+               })
+           }
+       })
+   })
 
 
 
+   $('.tabs__list-li').click(function() {  
+    $(this).siblings().removeClass('tabs__list-li--active');
+    $(this).addClass('tabs__list-li--active');
+});
 
+// 
+  
 });

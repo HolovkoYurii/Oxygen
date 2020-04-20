@@ -3,55 +3,53 @@
     .portfolio__header{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        .tabs__list{
+            display: flex;
+            .tabs__list-li{
+                margin:0 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            .tabs__list-li--active{
+                position: relative;
+                &:after{
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    background: #FCBB08;
+                    position: absolute;
+                    top: 32px;
+                    left: 0;
+                }
+            }
+            .tabs__item{
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 24px;
+                letter-spacing: 2px;
+                color: #333333;
+                cursor: pointer;
+                padding-right: 35px;
+                position: relative;
+                &:last-child{
+                    padding: 0;
+                }
+            }
+        }
     }
-    .tabs__list{
+    .tabs__wrap-content{
+        padding-top: 103px;
         display: flex;
+        .tab__content{
+            display: none;
+        }
+        .tab__content.tab-active {
+            display: block;
+            }
     }
-}
-
-
-
-.tabs__item{
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    color: #333333;
-	cursor: pointer;
-    padding-right: 35px;
-    position: relative;
-  
-    &:last-child{
-        padding: 0;
-    }
-}
-
-.tabs__item.tabs__item-active{
-    &:after{
-        content: "";
-        height: 1px;
-        width: 100%;
-        background: #FCBB08;
-        position: absolute;
-        top: 32px;
-        left: 0;
-    }
-}
-
-.tab__content{
-    display: none;
-}
-.tab__content.tab-active {
-     display: block;
-     }
-
-.tabs__wrap-content{
-    padding-top: 103px;
-    display: flex;
-}
-li{
-    padding-right: 20px;
 }
 

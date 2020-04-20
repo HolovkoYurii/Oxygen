@@ -8,23 +8,22 @@
     }
     .our-expertise__skills{
         display: flex;
-    }
-    .our-expertise__progres-bar{
+        // .our-expertise__progres-bar{
 
+        // }
     }
     .our-expertise__text-wrap{
-
-    }
-    .our-expertise__text{
-        max-width: 770px;
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        color: #373A39;
-        &:first-child{
-            padding-bottom: 15px;
+        .our-expertise__text{
+            max-width: 770px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: #373A39;
+            &:first-child{
+                padding-bottom: 15px;
+            }
         }
     }
     .our-expertise__services-item{
@@ -36,29 +35,28 @@
         display: flex;
         align-items: flex-start;
         margin: 0 10px;
-    }
-    .sivices__wrap-info{
-        padding-left: 40px;
-    }
-    .services__title{
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 4.29px;
-        color: #333333;
-        text-transform: uppercase;
-        padding-bottom: 18px;
-
-    }
-    .services__text{
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        color: #777777;
-        max-width: 285px;
+        .sivices__wrap-info{
+            padding-left: 40px;
+            .services__title{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 4.29px;
+                color: #333333;
+                text-transform: uppercase;
+                padding-bottom: 18px;
+            }
+            .services__text{
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 24px;
+                color: #777777;
+                max-width: 285px;
+            }
+        }
     }
 }

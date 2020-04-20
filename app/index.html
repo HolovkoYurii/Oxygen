@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Oxygen</title>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:300,400,600&display=swap&subset=cyrillic"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
   <header class="header">
     <div class="container">
@@ -44,7 +40,7 @@
         </nav><!-- ./header__menu-->
       </div><!-- /.header__wrap -->
     </div>
-  </header>
+  </header><!-- header -->
   <section class="start-screen" id="start-screen">
     <div class="container">
       <div class="start-screen__wrap">
@@ -55,7 +51,7 @@
         </div><!-- /.decor-mouse -->
       </div><!-- /.start-screen__wrap -->
     </div>
-  </section>
+  </section><!-- start-screen -->
   <section class="about-us" id="about-us">
     <div class="container">
       <div class="about-us__wrap">
@@ -72,10 +68,10 @@
             praesentium saepe ex distinctio aliquid quis laborum sit, porro dolor odio, iste eos laboriosam dolorum
             maiores harum reiciendis vitae doloribus illum voluptatibus nobis maxime assumenda ipsam tempora fugiat.
             Perspiciatis quibusdam hic cum tempore.</p>
-        </div>
-      </div>
+        </div><!-- about-us__wrap-text -->
+      </div><!-- about-us__wrap -->
     </div>
-  </section>
+  </section><!-- about-us -->
   <section class="our-expertise">
     <div class="container">
       <h2 class="title-section our-expertise__title">
@@ -123,12 +119,12 @@
         </div><!-- /.services__list-item -->
       </div><!-- /our-expertise__services-item -->
     </div>
-  </section>
+  </section><!-- our-expertise -->
   <section class="magic">
     <div class="magic-wrap">
       <div class="magic-wrap__img">
         <img src="img/magic-img.jpg" alt="img">
-      </div>
+      </div><!-- magic-wrap__img -->
       <div class="magic__wrap-content">
         <div class="magic__content">
           <h2 class="title-section magic__title">Let’s make magic.</h2>
@@ -146,44 +142,37 @@
         </div><!-- /.magic__content -->
       </div><!-- /.magic__wrap-content -->
     </div><!-- /.magic-wrap -->
-  </section>
+  </section><!-- magic -->
   <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="portfolio__header">
         <h2 class="title-section portfolio__title">Portfolio</h2>
         <ul class="tabs__list">
-          <li><span class="tabs__item tabs__item-active" data-tab-name="tab-all">ALL</span> </li>
-          <li><span class="tabs__item" data-tab-name="tab-branding">BRANDING</span> </li>
-          <li><span class="tabs__item" data-tab-name="tab-design">DESIGN</span></li>
-          <li><span class="tabs__item" data-tab-name="tab-photography">PHOTOGRAPHY</span></li>
-          <li><span class="tabs__item" data-tab-name="tab-illustration">ILLUSTRATION</span></li>
-
+          <li class="tabs__list-li tabs__list-li--active"><a href="#" class="tabs__item" data-filter="all">ALL</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter ="branding">BRANDING</a> </li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter ="design">DESIGN</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter ="photography">PHOTOGRAPHY</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter ="illustration">ILLUSTRATION</a></li>
         </ul><!-- /.tabs__list -->
       </div><!-- /.portfolio__header -->
     </div>
     <div class="tabs__wrap-content">
-      <div class="tab__content tab-active tab-branding tab-all">
-        <img src="https://fakeimg.pl/343x494/">
-        <img src="https://fakeimg.pl/343x395/">
+      <div data-picture="branding">
+       
       </div><!-- ./tab__content -->
-      <div class="tab__content tab-active tab-design tab-all">
-        <img src="https://fakeimg.pl/343x288/">
-        <img src="https://fakeimg.pl/343x288/">
-        <img src="https://fakeimg.pl/343x292/">
+      <div data-picture="design">
+      
       </div><!-- ./tab__content -->
-      <div class="tab__content tab-active tab-photography tab-all">
-        <img src="https://fakeimg.pl/343x367/">
-        <img src="https://fakeimg.pl/343x523/">
+      <div data-picture="photography">
+       
       </div><!-- ./tab__content -->
-      <div class="tab__content  tab-active tab-illustration tab-all">
-        <img src="https://fakeimg.pl/343x318/">
-        <img src="https://fakeimg.pl/343x572/">
+      <div data-picture="illustration">
+    
       </div><!-- ./tab__content -->
     </div><!-- /.tabs__wrap-content -->
-  </section>
+  </section><!-- portfolio -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
