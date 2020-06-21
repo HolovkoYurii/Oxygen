@@ -1,5 +1,29 @@
 $(document).ready(function(){
 
+    new WOW().init();
+
+$(function(){
+    let header = $(".header"),
+        introH = $("#start-screen").innerHeight(),
+        scrollOffset = $(window).scrollTop();
+    checkScroll(scrollOffset);
+
+    $(window).on("scroll", function(){
+        scrollOffset = $(this).scrollTop();
+        checkScroll(scrollOffset);
+    });
+
+    function checkScroll(scrollOffset){
+    if(scrollOffset >= introH){
+        header.addClass("fixed");
+    } else {
+        header.removeClass("fixed")
+    }
+    };
+}),
+
+
+
 
   $(".header__menu-list,.decor-mouse").on("click","a", function (event) {
       //отменяем стандартную обработку нажатия по ссылке
