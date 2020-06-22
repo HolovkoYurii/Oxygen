@@ -8,7 +8,7 @@
   <title>Oxygen</title>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:300,400,600&display=swap&subset=cyrillic"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -18,18 +18,18 @@
     <div class="container">
       <div class="header__wrap">
         <a class="header__wrap-logo wrap__logo" href="index.html">
-          <img src="img/logo-bird.svg" alt="">
+          <img src="img/logo-bird.svg" alt="logo company">
         </a>
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__list-item">
-              <a class="header__menu-link" href="#">HOME</a>
+              <a class="header__menu-link" href="#start-screen">HOME</a>
             </li>
             <li class="header__list-item">
-              <a class="header__menu-link" href="#">ABOUT US</a>
+              <a class="header__menu-link" href="#about-us">ABOUT US</a>
             </li>
             <li class="header__list-item">
-              <a class="header__menu-link" href="#">PORTFOLIO</a>
+              <a class="header__menu-link" href="#portfolio">PORTFOLIO</a>
             </li>
             <li class="header__list-item">
               <a class="header__menu-link" href="#">OUR TEAM</a>
@@ -40,27 +40,143 @@
             <li class="header__list-item">
               <a class="header__menu-link" href="#">CONTACT</a>
             </li>
-          </ul>
+          </ul><!-- /.header__menu-list -->
         </nav><!-- ./header__menu-->
       </div><!-- /.header__wrap -->
     </div>
-  </header>
-  <section class="start-screen">
+  </header><!-- /header -->
+  <section class="start-screen" id="start-screen">
     <div class="container">
       <div class="start-screen__wrap">
         <h1 class="start-screen__title">OXYGEN</h1>
         <span class="start-screen__subtitle">STARTER UI KIT</span>
-        <div class="decor-mouse">
-          <svg width="26" height="43" viewBox="0 0 26 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="slide-bottom" fill-rule="evenodd" clip-rule="evenodd"
-              d="M13 14C14.6569 14 16 12.6569 16 11C16 9.34315 14.6569 8 13 8C11.3431 8 10 9.34315 10 11C10 12.6569 11.3431 14 13 14Z"
-              fill="white" />
-            <rect x="1" y="1" width="24" height="41" rx="12" stroke="white" stroke-width="2" />
-          </svg>
+        <div class="decor-mouse menu">
+          <a href="#about-us" class="decor-mouse__link"></a>
         </div><!-- /.decor-mouse -->
       </div><!-- /.start-screen__wrap -->
     </div>
-  </section>
+  </section><!-- /start-screen -->
+  <section class="about-us" id="about-us">
+    <div class="container">
+      <div class="about-us__wrap">
+        <h2 class="about-us__title title-section animated  bounceInLeft wow" data-wow-offset="350">
+          About Us
+        </h2>
+        <div class="about-us__wrap-text">
+          <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam
+            culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos
+            aliquam ad minus nisi. In, fuga blanditiis non cum cupiditate dolore, accusantium odio doloremque quibusdam
+            dignissimos nemo sed nisi, similique, mollitia et! Autem laborum sint tenetur, earum facere veniam?
+          </p>
+          <p class="about-us__text">Sunt fugiat veniam consectetur soluta quia ex tempora quaerat, perferendis! Itaque a
+            praesentium saepe ex distinctio aliquid quis laborum sit, porro dolor odio, iste eos laboriosam dolorum
+            maiores harum reiciendis vitae doloribus illum voluptatibus nobis maxime assumenda ipsam tempora fugiat.
+            Perspiciatis quibusdam hic cum tempore.</p>
+        </div><!-- /about-us__wrap-text -->
+      </div><!-- /about-us__wrap -->
+    </div>
+  </section><!-- /about-us -->
+  <section class="our-expertise">
+    <div class="container">
+      <h2 class="title-section our-expertise__title animated  bounceInLeft wow" data-wow-offset="350">
+        Our Expertise
+      </h2>
+      <a href="#" id="go-top">&#8593</a>
+      <div class="our-expertise__wrap">
+        <div class="our-expertise__skills">
+          <div class="our-expertise__progres-bar"></div>
+          <div class="our-expertise__text-wrap">
+            <p class="our-expertise__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi
+              totam culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis
+              dignissimos aliquam ad minus nisi.</p>
+            <p class="our-expertise__text">Autem laborum sint tenetur, earum facere veniam? Sunt fugiat veniam
+              consectetur soluta quia ex tempora quaerat, perferendis! Itaque a praesentium saepe ex distinctio aliquid
+              quis</p>
+          </div>
+        </div>
+      </div><!-- /.our-expertise__wrap -->
+      <div class="our-expertise__services-item">
+        <div class="services__list-item">
+          <img class="animated  bounceInLeft wow delay-1s" data-wow-offset="50" src="img/icon-design.svg"
+            alt="icon services">
+          <div class="sivices__wrap-info">
+            <div class="services__title bounceInUp wow delay-6s" data-wow-offset="50">GRAPHIC DESIGN</div>
+            <p class="services__text">Lorem Ipsum Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+          </div>
+        </div><!-- /.services__list-item -->
+        <div class="services__list-item">
+          <img class="animated  bounceInLeft wow  delay-1s" data-wow-offset="50" src="img/icon-monitor.svg"
+            alt="icon services">
+          <div class="sivices__wrap-info">
+            <div class="services__title bounceInUp wow delay-7s" data-wow-offset="50">WEB DEVELOPMENT</div>
+            <p class="services__text">Lorem Ipsum Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+          </div>
+        </div><!-- /.services__list-item -->
+        <div class="services__list-item">
+          <img class="animated  bounceInLeft wow delay-1s" data-wow-offset="50" src="img/icon-speaker.svg"
+            alt="icon services">
+          <div class="sivices__wrap-info">
+            <div class="services__title bounceInUp wow delay-9s" data-wow-offset="50">MARKETING</div>
+            <p class="services__text">Lorem Ipsum Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+          </div>
+        </div><!-- /.services__list-item -->
+      </div><!-- /.our-expertise__services-item -->
+    </div>
+  </section><!-- /.our-expertise -->
+  <section class="magic">
+    <div class="magic-wrap">
+      <div class="magic-wrap__img">
+        <img src="img/magic-img.jpg" alt="img">
+      </div><!-- /.magic-wrap__img -->
+      <div class="magic__wrap-content">
+        <div class="magic__content">
+          <h2 class="title-section magic__title animated  bounceInDown wow" data-wow-offset="350">Let’s make magic.</h2>
+          <p class="magic__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veniam odio itaque.
+            Molestiae aut dicta accusantium quod, modi ad alias enim dolor delectus iusto! Inventore tempora labore
+            nobis
+            doloribus optio nulla sit corrupti nostrum, tempore debitis pariatur minus maiores velit, autem ex eum
+            distinctio error fugit. Itaque voluptatum quam veritatis fuga impedit nulla dolor. </p>
+          <p class="magic__text">Nam dignissimos, ratione odit doloribus cum porro, aut. Ipsum nisi odio voluptatum, et,
+            reprehenderit accusamus, est provident debitis dicta ullam esse assumenda, odit? Alias architecto enim
+            pariatur libero ipsam mollitia maiores minus quibusdam numquam perspiciatis eveniet sit dolores eligendi
+            inventore, ea voluptatum debitis iure, repellendus iste culpa! Voluptatibus quam ipsum nisi odit deserunt
+            qui,
+            consectetur ducimus, quis officia quaerat sapiente dolores, ad libero! Tenetur provident, omnis.</p>
+        </div><!-- /.magic__content -->
+      </div><!-- /.magic__wrap-content -->
+    </div><!-- /.magic-wrap -->
+  </section><!-- /.magic -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="portfolio__header">
+        <h2 class="title-section portfolio__title animated  bounceInLeft wow" data-wow-offset="50">Portfolio</h2>
+        <ul class="tabs__list">
+          <li class="tabs__list-li tabs__list-li--active"><a href="#" class="tabs__item" data-filter="all">ALL</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="branding">BRANDING</a> </li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="design">DESIGN</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="photography">PHOTOGRAPHY</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="illustration">ILLUSTRATION</a></li>
+        </ul><!-- /.tabs__list -->
+      </div><!-- /.portfolio__header -->
+    </div>
+    <div class="tabs__wrap-content">
+      <div data-picture="branding">
+
+      </div><!-- /.tab__content -->
+      <div data-picture="design">
+
+      </div><!-- /.tab__content -->
+      <div data-picture="photography">
+
+      </div><!-- /.tab__content -->
+      <div data-picture="illustration">
+
+      </div><!-- /.tab__content -->
+    </div><!-- /.tabs__wrap-content -->
+  </section><!-- /.portfolio -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

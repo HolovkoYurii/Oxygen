@@ -16,7 +16,8 @@ gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
-      overRideBrowsers: ['last 10 versions'],
+      overrideBrowserslist: ['last 10 versions'],
+      cascade: false
   }))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
@@ -26,6 +27,8 @@ gulp.task('scss', function(){
 gulp.task('css', function(){
   return gulp.src([
     'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/animate.css/animate.css',
+
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
@@ -44,7 +47,9 @@ gulp.task('script', function(){
 
 gulp.task('js', function(){
   return gulp.src([
-    'node_modules/slick-carousel/slick/slick.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/wowjs/dist/wow.min.js'
+
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
