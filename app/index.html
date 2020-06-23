@@ -32,13 +32,13 @@
               <a class="header__menu-link" href="#portfolio">PORTFOLIO</a>
             </li>
             <li class="header__list-item">
-              <a class="header__menu-link" href="#">OUR TEAM</a>
+              <a class="header__menu-link" href="#our-team">OUR TEAM</a>
             </li>
             <li class="header__list-item">
               <a class="header__menu-link" href="#">BLOG</a>
             </li>
             <li class="header__list-item">
-              <a class="header__menu-link" href="#">CONTACT</a>
+              <a class="header__menu-link" href="#contact">CONTACT</a>
             </li>
           </ul><!-- /.header__menu-list -->
         </nav><!-- ./header__menu-->
@@ -73,7 +73,6 @@
             maiores harum reiciendis vitae doloribus illum voluptatibus nobis maxime assumenda ipsam tempora fugiat.
             Perspiciatis quibusdam hic cum tempore.</p>
         </div><!-- /about-us__wrap-text -->
-        
       </div><!-- /about-us__wrap -->
     </div>
   </section><!-- /about-us -->
@@ -82,7 +81,7 @@
       <h2 class="title-section our-expertise__title animated  bounceInLeft wow" data-wow-offset="350">
         Our Expertise
       </h2>
-      <a href="#" id="go-top">&#8593</a>
+      <a href="#" id="go-top"><img src="img/up-arrow.svg" alt="image"></a>
       <div class="our-expertise__wrap">
         <div class="our-expertise__skills">
           <div class="our-expertise__progres-bar"></div>
@@ -129,9 +128,7 @@
   </section><!-- /.our-expertise -->
   <section class="magic">
     <div class="magic-wrap">
-      <div class="magic-wrap__img">
-        <img src="img/magic-img.jpg" alt="img">
-      </div><!-- /.magic-wrap__img -->
+      <div class="magic-wrap__img">r</div>
       <div class="magic__wrap-content">
         <div class="magic__content">
           <h2 class="title-section magic__title animated  bounceInDown wow" data-wow-offset="350">Let’s make magic.</h2>
@@ -147,7 +144,9 @@
             qui,
             consectetur ducimus, quis officia quaerat sapiente dolores, ad libero! Tenetur provident, omnis.</p>
         </div><!-- /.magic__content -->
-      </div><!-- /.magic__wrap-content -->
+      </div>
+
+    </div><!-- /.magic__wrap-content -->
     </div><!-- /.magic-wrap -->
   </section><!-- /.magic -->
   <section class="portfolio" id="portfolio">
@@ -155,30 +154,43 @@
       <div class="portfolio__header">
         <h2 class="title-section portfolio__title animated  bounceInLeft wow" data-wow-offset="50">Portfolio</h2>
         <ul class="tabs__list">
-          <li class="tabs__list-li tabs__list-li--active"><a href="#" class="tabs__item" data-filter="all">ALL</a></li>
-          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="branding">BRANDING</a> </li>
-          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="design">DESIGN</a></li>
-          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="photography">PHOTOGRAPHY</a></li>
-          <li class="tabs__list-li"><a href="#" class="tabs__item" data-filter="illustration">ILLUSTRATION</a></li>
-        </ul><!-- /.tabs__list -->
+          <li class="tabs__list-li tabs__list-li--active"><a href="#" class="tabs__item">ALL</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item">BRANDING</a> </li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item">DESIGN</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item">PHOTOGRAPHY</a></li>
+          <li class="tabs__list-li"><a href="#" class="tabs__item">ILLUSTRATION</a></li>
+        </ul>
       </div><!-- /.portfolio__header -->
     </div>
     <div class="tabs__wrap-content">
-      <div data-picture="branding">
+     
+      <div id="tabs">
+        <!-- Кнопки -->
+        <ul class="tabs-nav">
+          <li><a href="#tab-1">Вкладка №1</a></li>
+          <li><a href="#tab-2">Вкладка №2</a></li>
+          <li><a href="#tab-3">Вкладка №3</a></li>
+        </ul>	
+        
+        <!-- Контент -->
+        <div class="tabs-items">
+          <div class="tabs-item" id="tab-1">
+            <img src="img/team-img-1.jpg" alt="">
 
-      </div><!-- /.tab__content -->
-      <div data-picture="design">
+          </div>
+          <div class="tabs-item" id="tab-2">
+            <img src="img/team-img-3.jpg" alt="">
+          </div>
+          <div class="tabs-item" id="tab-3">
+            <img src="img/team-img-2.jpg" alt="">
 
-      </div><!-- /.tab__content -->
-      <div data-picture="photography">
+          </div>		
+        </div>
+      </div>  
 
-      </div><!-- /.tab__content -->
-      <div data-picture="illustration">
-
-      </div><!-- /.tab__content -->
     </div><!-- /.tabs__wrap-content -->
   </section><!-- /.portfolio -->
-  <section class="our-team">
+  <section class="our-team" id="our-team">
     <div class="container">
       <h2 class="title-section  animated  bounceInLeft wow" data-wow-offset="350">Our Team.</h2>
       <div class="our-team__wrap">
@@ -236,7 +248,7 @@
     <div class="container">
       <h2 class="title-section  animated  bounceInLeft wow" data-wow-offset="350">Pricing Plans.</h2>
       <div class="pricing-plans__wrap">
-        <div class="pricing-plans__item">
+        <div class="pricing-plans__item bounceInUp wow delay-1s" data-wow-offset="70">
           <div class="pricing-plans__title">
             Basic
           </div>
@@ -258,7 +270,7 @@
             <button class="choose-plan">CHOOSE PLAN</button>
           </div>
         </div><!-- /.pricing-plans__item -->
-        <div class="pricing-plans__item">
+        <div class="pricing-plans__item bounceInUp wow delay-2s" data-wow-offset="70">
           <div class="pricing-plans__title">
             Basic
           </div>
@@ -280,7 +292,7 @@
             <button class="choose-plan">CHOOSE PLAN</button>
           </div>
         </div><!-- /.pricing-plans__item -->
-        <div class="pricing-plans__item">
+        <div class="pricing-plans__item bounceInUp wow delay-3s" data-wow-offset="70">
           <div class="pricing-plans__title">
             Basic
           </div>
@@ -302,7 +314,7 @@
             <button class="choose-plan">CHOOSE PLAN</button>
           </div>
         </div><!-- /.pricing-plans__item -->
-        <div class="pricing-plans__item">
+        <div class="pricing-plans__item bounceInUp wow delay-4s" data-wow-offset="70">
           <div class="pricing-plans__title">
             Basic
           </div>
@@ -327,6 +339,26 @@
       </div><!-- /.pricing-plans__wrap -->
     </div>
   </section><!-- /.pricing-plans -->
+  <section class="contact" id="contact">
+    <div class="contact__wrap-content">
+      <div class="contact__wrap-contact">
+        <h2 class="title-section animated  bounceInLeft wow" data-wow-offset="350">Get in Touch</h2>
+        <form action="form">
+          <!-- form -->
+          <input type="text" name="name" id="name" placeholder="YOUR NAME">
+          <input type="email" name="email" id="email" placeholder="VALID EMAIL">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+          <button class="send-message" type="submit">SEND MESSAGE</button>
+        </form><!-- /.form -->
+      </div>
+      <div class="contact__wrap-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387463.174943666!2d-74.2215549417638!3d40.650694752929006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1592893922340!5m2!1sru!2sua"
+          width="100%" height="896px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div><!-- /.contact__wrap-content -->
+  </section><!-- /.contact -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

@@ -2,7 +2,9 @@
     background-image: url(../img/start-screen-background.jpg);
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: cover;
     height: 100vh;
+    position: relative;
     .start-screen__wrap{
         display: flex;
         flex-direction: column;
@@ -28,7 +30,6 @@
           padding-bottom: 180px;
       }
       .decor-mouse{
-        position: relative;
         .decor-mouse__link{
           position: absolute; 
           left: 50%;
@@ -38,7 +39,7 @@
           border: 2px solid #fff;
           border-radius: 50px;
           box-sizing: border-box;
-          bottom: 0;
+          bottom: 62px;
           &::before {
             position: absolute;
             top: 5px;

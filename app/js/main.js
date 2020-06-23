@@ -143,28 +143,31 @@ $(window).scroll(function(){
 
    });
 
-   $(function(){
-       let filter = $("[data-filter]");
 
-       filter.on("click", function(event){
-           event.preventDefault();
 
-           let cat = $(this).data("filter");
+   /* Фильтры */
+//    $(function(){
+//        let filter = $("[data-filter]");
 
-           if(cat == "all"){
-               $("[data-picture]").removeClass("hide");
-           }else{
-               $("[data-picture]").each(function(){
-                   let workCat = $(this).data("picture");
-                   if(workCat != cat){
-                       $(this).addClass("hide");
-                   }else{
-                    $(this).removeClass("hide");
-                   }
-               })
-           }
-       })
-   })
+//        filter.on("click", function(event){
+//            event.preventDefault();
+
+//            let cat = $(this).data("filter");
+
+//            if(cat == "all"){
+//                $("[data-picture]").removeClass("hide");
+//            }else{
+//                $("[data-picture]").each(function(){
+//                    let workCat = $(this).data("picture");
+//                    if(workCat != cat){
+//                        $(this).addClass("hide");
+//                    }else{
+//                     $(this).removeClass("hide");
+//                    }
+//                })
+//            }
+//        })
+//    })
 
 
 
@@ -175,4 +178,38 @@ $(window).scroll(function(){
 
 // 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(function() {
+	var tab = $('#tabs .tabs-items > div'); 
+	tab.hide().filter(':first').show(); 
+	
+	// Клики по вкладкам.
+	$('#tabs .tabs-nav a').click(function(){
+		tab.hide(); 
+		tab.filter(this.hash).show(); 
+		$('#tabs .tabs-nav a').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	}).filter(':first').click();
+ 
+	// Клики по якорным ссылкам.
+	$('.tabs-target').click(function(){
+		$('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
+	});
+});
+
 });

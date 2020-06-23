@@ -11,6 +11,7 @@
 @import "block/our-team";
 @import "block/our-advantages";
 @import "block/pricing-plans";
+@import "block/contact";
 
 
 .active{
@@ -22,7 +23,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    max-width: 1440px;
+    // max-width: 1440px;
     margin: 0 auto;
     width: 100%;
 }
@@ -53,10 +54,9 @@ body{
         top: 89px;
     }
 }
-
-
 #go-top {
     position: fixed; 
+    z-index: 10;
     bottom: 193px; 
     right: 30px; 
     cursor:pointer; 
@@ -78,12 +78,6 @@ body{
         -ms-flex-align: center;
             align-items: center;
 }
-#go-top:hover{
-    border: solid 1px #000;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;	
-}
-
 .hide{
     display: none;
 }
