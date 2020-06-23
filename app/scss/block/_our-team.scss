@@ -1,0 +1,38 @@
+
+.our-team{
+    padding-top: 120px;
+    padding-bottom: 164px;
+    .our-team__wrap{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -10px;
+        padding-top: 102px;
+        .our-team__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+            .our-team__name{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                color: #333333;
+                padding-top: 35px;
+            }
+            .our-team__position{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 16px;
+                color: #C2C2C2;
+                padding-top: 12px;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,38 @@
+.our-advantages{
+    #wrapp-advantages{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 154px;
+        padding-bottom: 174px;
+        background-color: #ffffff;
+        flex-wrap: wrap;
+        .wrapp-advantages__block-advantages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        margin-bottom: 30px;
+            img{
+                width: 120px;
+            }
+            .block-advantages__number{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 60px;
+                line-height: 73px;
+                display: flex;
+                align-items: flex-end;
+                color: #242121;
+            }
+            .block-advantages__title{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #00B2A0;
+            }
+        }
+    }
+}

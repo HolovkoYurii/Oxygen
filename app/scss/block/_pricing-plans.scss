@@ -1,0 +1,84 @@
+
+.pricing-plans{
+    padding-top: 144px;
+    background: #F6F8FA;
+    
+.pricing-plans__wrap{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -10px;
+    padding-top: 91px;
+    padding-bottom: 162px;
+    .pricing-plans__item{
+    max-width: 370px;
+    min-height: 583px;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 0 10px;
+        .pricing-plans__title{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #242121;
+        }
+        .pricing-plans__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .pricing-plans__price{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 80px;
+                line-height: 109px;
+                color: #242121;
+                padding-top: 9px;
+            }
+            .pricing-plans__currency{
+                font-size: 40px;
+            }
+            .pricing-plans__tern{
+                font-size: 20px;
+            }
+            .pricing-plans__list-services{
+                padding-top: 51px;
+                li{
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #242121;
+                    padding-bottom: 30px;
+                }
+            }
+            .choose-plan{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 1.2px;
+                color: #242121;
+                text-transform: uppercase;
+                padding-top: 39px;
+                &:hover{
+                    color: #FCBB08;
+                    transition: 0.2s ease;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+}
