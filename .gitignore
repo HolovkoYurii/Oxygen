@@ -353,3 +353,4 @@ MigrationBackup/
 gulpfile.js
 package-lock.json
 package.json
+style.min.css

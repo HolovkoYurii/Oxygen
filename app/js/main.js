@@ -193,7 +193,7 @@ $(window).scroll(function(){
 
 
 
-$(function() {
+/* $(function() {
 	var tab = $('#tabs .tabs-items > div'); 
 	tab.hide().filter(':first').show(); 
 	
@@ -210,6 +210,32 @@ $(function() {
 	$('.tabs-target').click(function(){
 		$('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
 	});
+}); */
+
+
+$(function() {
+	var tab = $('.tabs-items > div'); 
+	tab.hide().filter(':first').show(); 
+	
+	// Клики по вкладкам.
+	$('.tabs__list a').click(function(){
+		tab.hide(); 
+		tab.filter(this.hash).show(); 
+		$('.tabs__list a').removeClass('tabs__list-li--active');
+		$(this).addClass('tabs__list-li--active');
+		return false;
+	}).filter(':first').click();
+ 
+	// Клики по якорным ссылкам.
+	$('.tabs-target').click(function(){
+		$('.tabs__list a[href=' + $(this).data('id')+ ']').click();
+	});
 });
+
+
+
+
+
+
 
 });
